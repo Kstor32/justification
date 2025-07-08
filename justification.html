@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe de Justificación: Adquisición de Equipos e Impresoras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Importa la fuente Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para las pestañas */
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem 0.5rem 0 0;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: #e0e7ff; /* light indigo */
+            color: #4338ca; /* indigo-700 */
+            border-bottom: 3px solid transparent;
+        }
+        .tab-button.active {
+            background-color: #fff;
+            color: #312e81; /* indigo-900 */
+            border-bottom: 3px solid #6366f1; /* indigo-500 */
+            box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+        }
+        .tab-content {
+            display: none;
+            padding-top: 1rem; /* Space between tabs and content */
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 font-sans text-gray-800 p-4 sm:p-8">
+
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-2xl p-6 sm:p-8">
+        <div class="flex justify-center mb-8 border-b border-gray-200">
+            <button class="tab-button active" onclick="showTab('computer-report')">
+                💻 Equipos de Cómputo
+            </button>
+            <button class="tab-button ml-2" onclick="showTab('printer-report')">
+                🖨️ Impresoras
+            </button>
+            <button class="tab-button ml-2" onclick="showTab('projector-report')">
+                📽️ Proyección
+            </button>
+        </div>
+
+        <div id="computer-report" class="tab-content active">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-800 leading-tight mb-4 rounded-lg bg-white p-4 shadow-lg">
+                    📈 Informe de Justificación: Adquisición de Equipos con Procesadores Intel de 14ª Generación
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+                    Este informe explica por qué invertir en computadoras con procesadores Intel de 14ª generación es la mejor decisión para nuestra organización, utilizando el ejemplo del <strong>Intel Core i5-14500T</strong>.
+                </p>
+            </header>
+
+            <section class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-indigo-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🚀</span>
+                        <h2 class="text-2xl font-bold text-indigo-700">1. Rendimiento Superior</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las computadoras con procesadores de 14ª generación son <strong>más rápidas y capaces de manejar más tareas a la vez</strong>. Por ejemplo, el <strong>Intel Core i5-14500T</strong> tiene 14 núcleos y 20 "hilos de trabajo", lo que es mucho más que los 6 núcleos y 12 hilos de un i5-12500T de 12ª generación.
+                    </p>
+                    <h3 class="font-semibold text-indigo-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Mayor fluidez al usar varios programas al mismo tiempo.</li>
+                        <li>Menos tiempo de espera, más productividad diaria.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://edc.intel.com/content/www/us/en/products/performance/benchmarks/intel-core-14th-gen-desktop-processors/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel Performance Index</a>, <a href="https://www.cpubenchmark.net/cpu.php?cpu=Intel+Core+i5-14500T&id=5889" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">CPU Benchmarks (i5-14500T)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-emerald-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">⚡</span>
+                        <h2 class="text-2xl font-bold text-emerald-700">2. Eficiencia Energética Optimizada</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Los procesadores de la serie "T" como el <strong>Intel Core i5-14500T</strong> están diseñados para consumir menos energía (35W), ofreciendo un gran rendimiento sin un alto gasto eléctrico.
+                    </p>
+                    <h3 class="font-semibold text-emerald-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Menor gasto en electricidad a largo plazo.</li>
+                        <li>Equipos más compactos y silenciosos, ideales para la oficina.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://ibertronica.es/intel-core-i5-14500t-17ghz-socket-1700-tray" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Ibertrónica (i5-14500T)</a>, <a href="https://boxx.com/blog/hardware/intel-core-ultra-vs-14th-gen--here-is-why-you-should-upgrade" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">BOXX Technologies</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-purple-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">⏳</span>
+                        <h2 class="text-2xl font-bold text-purple-700">3. Mayor Vida Útil Tecnológica</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Aunque un procesador dura muchos años, su "vida útil tecnológica" (cuánto tiempo sigue siendo útil para el software moderno) es clave. El <strong>i5-14500T</strong> es más potente desde el inicio.
+                    </p>
+                    <h3 class="font-semibold text-purple-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Las computadoras no necesitarán ser reemplazadas tan pronto.</li>
+                        <li>Se extiende el ciclo de vida de los equipos, reduciendo costos de renovación.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://es.quora.com/Tengo-un-Core-i5-de-novena-generaci%C3%B3n-lo-compr%C3%B3-cuando-sali%C3%B3-cuanto-tiempo-de-vida-le-queda-actualmente-en-2023-sigue-sin-problemas-y-si-me-compro-un-i9-de-treceava-generaci%C3%B3n-cuanto-tiempo-me" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Quora (Vida Útil CPU)</a>, <a href="https://www.pcmag.com/encyclopedia/term/technology-obsolescence" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">PCMag (Obsolescencia)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-cyan-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🔗</span>
+                        <h2 class="text-2xl font-bold text-cyan-700">4. Compatibilidad Futura</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Los procesadores de 14ª generación, incluido el <strong>i5-14500T</strong>, son compatibles con las memorias DDR5 (más rápidas) y las conexiones PCIe 5.0 (para discos duros y tarjetas avanzadas). El <strong>i5-14500T</strong> también soporta memoria ECC para mayor fiabilidad de datos.
+                    </p>
+                    <h3 class="font-semibold text-cyan-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Sistemas más ágiles y preparados para el software del mañana.</li>
+                        <li>Protección de la inversión al estar listos para futuras expansiones.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.intel.la/content/www/xl/es/products/docs/processors/core/core-14th-gen-desktop-brief.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel (14ª Gen Resumen)</a>, <a href="https://www.intel.com/content/www/us/en/products/sku/236780/intel-core-i5-processor-14500t-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel (i5-14500T Especificaciones)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-orange-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🛒</span>
+                        <h2 class="text-2xl font-bold text-orange-700">5. Disponibilidad y Soporte</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        La 14ª generación es la más reciente de Intel, lo que significa que hay una gran variedad de equipos nuevos disponibles con estos procesadores, incluyendo el <strong>i5-14500T</strong>.
+                    </p>
+                    <h3 class="font-semibold text-orange-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Fácil acceso a equipos modernos.</li>
+                        <li>Mejor soporte y actualizaciones de los fabricantes, garantizando el buen funcionamiento y la seguridad.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.cyberpuerta.mx/Procesadores-Intel-14va-Generacion/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Cyberpuerta (14ª Gen)</a>, <a href="https://www.intel.com/content/www/us/en/ark/products/series/236175/intel-core-i5-processors-14th-gen.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel (i5 14ª Gen)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-red-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🔒</span>
+                        <h2 class="text-2xl font-bold text-red-700">6. Administración Remota y Seguridad (Intel vPro®)</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Los procesadores de 14ª generación con la plataforma <strong>Intel vPro®</strong>, como el <strong>i5-14500T</strong>, ofrecen herramientas avanzadas para gestionar y proteger los equipos de forma remota, incluso si están apagados o el sistema operativo no funciona.
+                    </p>
+                    <h3 class="font-semibold text-red-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li><strong>Diagnóstico y Administración Remota:</strong> Acceso remoto a información clave del equipo (tipo de procesador, memoria, número de serie, disco duro, BIOS) para diagnósticos y resolución de problemas sin necesidad de presencia física.</li>
+                        <li><strong>Seguridad Independiente del Sistema Operativo:</strong> Permite habilitar/deshabilitar el arranque desde USB/CD-ROM y disco duro y los puertos de forma segura, incluso si el sistema operativo está comprometido.</li>
+                        <li><strong>Wi-Fi con vPro:</strong> Mejora la conectividad inalámbrica con mayor velocidad y fiabilidad, crucial para el trabajo remoto y las videoconferencias, con seguridad integrada.</li>
+                        <li><strong>Reducción de Costos de Soporte:</strong> Disminuye la necesidad de visitas presenciales de técnicos, ahorrando tiempo y dinero.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.intel.com/content/www/us/en/products/sku/236780/intel-core-i5-processor-14500t-24m-cache-up-to-4-80-ghz/specifications.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel (i5-14500T Especificaciones)</a>, <a href="https://www.eauditor.eu/en/remote-management-of-computers" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">eAuditor (Administración Remota)</a>, <a href="https://www.intel.com/content/www/us/en/business/enterprise-computers/resources/out-of-band-management.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel (Out-of-Band Management)</a>, <a href="https://statetechmagazine.com/article/2020/12/3-benefits-using-intel-vpro-processors-when-working-home" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">StateTech Magazine (vPro Wi-Fi)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-green-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">📊</span>
+                        <h2 class="text-2xl font-bold text-green-700">7. Rendimiento en Ofimática y Software General</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Los procesadores de 14ª generación, como el <strong>Intel Core i5-14500T</strong>, ofrecen un rendimiento superior en aplicaciones de oficina (como Microsoft Office) y herramientas de software de uso general. Esto se debe a su arquitectura mejorada, mayor número de núcleos (14 núcleos/20 hilos en el i5-14500T vs. 6 núcleos/12 hilos en el i5-12500T) y frecuencias más altas.
+                    </p>
+                    <h3 class="font-semibold text-green-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Ejecución más fluida de suites de ofimática, navegadores web y aplicaciones de comunicación.</li>
+                        <li>Mayor eficiencia en tareas diarias de creación y edición de documentos, hojas de cálculo y presentaciones.</li>
+                        <li>Mejor experiencia general del usuario en el software empresarial.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://edc.intel.com/content/www/us/en/products/performance/benchmarks/intel-core-14th-gen-desktop-processors/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Intel Performance Index (Productividad)</a>, <a href="https://www.notebookcheck.net/Intel-Core-i5-14500T-Processor-Benchmarks-and-Specs.905263.0.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">NotebookCheck.net (i5-14500T)</a>, <a href="https://www.ionos.mx/digitalguide/servidores/know-how/intel-raptor-lake/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">IONOS (Raptor Lake Beneficios)</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-8 mt-12 border-t-4 border-blue-600">
+                <h2 class="text-3xl font-bold text-blue-800 mb-6 text-center">📊 Justificación de la Inversión</h2>
+                <p class="text-gray-700 mb-4">
+                    Aunque el costo inicial de una computadora con procesador de 14ª generación (como el <strong>i5-14500T</strong>) podría ser un poco más alto, esta inversión se justifica por los siguientes beneficios a largo plazo:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>
+                        <span class="font-semibold text-blue-700">Aumento de la Productividad:</span> Equipos más rápidos significan que los empleados pueden hacer más en menos tiempo.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-blue-700">Reducción de Costos a Largo Plazo:</span> La mayor vida útil de los equipos de 14ª generación significa menos reemplazos y, por lo tanto, ahorros significativos en el futuro.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-blue-700">Preparación para el Futuro:</span> La compatibilidad con las últimas tecnologías asegura que los equipos estén listos para el software y las innovaciones que vendrán.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-blue-700">Eficiencia Operativa:</span> Menor consumo de energía contribuye a la reducción de gastos y a una operación más sostenible.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-blue-700">Administración y Seguridad Mejoradas:</span> Las capacidades de vPro permiten una gestión de TI más eficiente y una seguridad robusta a nivel de hardware, reduciendo el tiempo de inactividad y los riesgos.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-blue-700">Rendimiento Optimizado en Software Clave:</span> La mejora en el desempeño de aplicaciones de ofimática y software general se traduce directamente en una mayor eficiencia del personal.
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="max-w-4xl mx-auto text-center mt-12 p-6 bg-indigo-700 text-white rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">✨ Conclusión y Recomendación</h2>
+                <p class="text-lg mb-4">
+                    Basado en el rendimiento superior, la eficiencia energética, la mayor duración tecnológica, la compatibilidad con estándares futuros y las robustas capacidades de administración y seguridad de Intel vPro®, la adquisición de equipos con procesadores Intel de 14ª generación, como el <strong>Intel Core i5-14500T</strong>, es la opción más ventajosa para nuestra organización.
+                </p>
+                <p class="text-lg">
+                    Esta decisión no solo mejorará la productividad de nuestro personal, sino que también optimizará nuestros costos operativos y asegurará que nuestra infraestructura tecnológica se mantenga relevante y competitiva en el tiempo.
+                </p>
+            </footer>
+        </div>
+
+        <div id="printer-report" class="tab-content">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-teal-800 leading-tight mb-4 rounded-lg bg-white p-4 shadow-lg">
+                    🖨️ Informe de Justificación: Impresoras Láser vs. Tinta Continua en el Ámbito Educativo
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+                    Este informe analiza por qué las impresoras láser son una mejor opción que las impresoras de tinta continua para el entorno educativo, considerando eficiencia, costos y durabilidad.
+                </p>
+            </header>
+
+            <section class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-teal-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">💲</span>
+                        <h2 class="text-2xl font-bold text-teal-700">1. Costo por Página</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las impresoras láser utilizan tóner (un polvo) que, aunque el cartucho inicial puede ser más caro, rinde muchas más páginas que la tinta. Esto hace que el **costo por página impresa sea significativamente menor** en impresoras láser, especialmente para documentos en blanco y negro, lo cual es vital para el ahorro en presupuestos escolares.
+                    </p>
+                    <h3 class="font-semibold text-teal-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Ahorro considerable en consumibles a largo plazo, optimizando los recursos económicos de la institución.</li>
+                        <li>Menos interrupciones para reemplazar consumibles, manteniendo la continuidad en las operaciones.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.leadtech.ltd/es/a-which-is-more-expensive-inkjet-or-laser-printer.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Lead Tech Printer</a>, <a href="https://consumiblespuebla.mx/blog/que_tipo_de_impresora_es_mejor_para_mi_negocio_laser_o_tinta" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Consumibles Puebla</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-lime-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">⏱️</span>
+                        <h2 class="text-2xl font-bold text-lime-700">2. Velocidad de Impresión</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las impresoras láser son considerablemente **más rápidas** que las de tinta, especialmente en la impresión de grandes volúmenes de documentos de texto. Pueden imprimir entre 18 y 52 páginas por minuto, mientras que las de tinta suelen estar entre 10 y 24 páginas por minuto. Esta velocidad es crucial en un entorno escolar.
+                    </p>
+                    <h3 class="font-semibold text-lime-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Mayor eficiencia en la impresión de materiales para clases, exámenes, guías y comunicados masivos.</li>
+                        <li>Reducción significativa de tiempos de espera para profesores, estudiantes y personal administrativo, optimizando el tiempo de aprendizaje y gestión.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.mercadolibre.com.uy/blog/tr/que-es-mejor-impresora-tanque-de-tinta-o-laser" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Mercado Libre Uruguay</a>, <a href="https://www.hp.com/mx-es/shop/tech-takes/impresion-laser-vs-inyeccion-de-tinta" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">HP (Impresión Láser vs. Inyección de Tinta)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-amber-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🛠️</span>
+                        <h2 class="text-2xl font-bold text-amber-700">3. Durabilidad y Mantenimiento</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las impresoras láser son generalmente **más robustas y requieren menos mantenimiento** diario. El tóner no se seca ni obstruye los cabezales, un problema común en las impresoras de tinta si no se usan regularmente, lo cual es una ventaja en entornos de uso intermitente o alto volumen.
+                    </p>
+                    <h3 class="font-semibold text-amber-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Menos problemas técnicos y menos tiempo de inactividad de la impresora, asegurando que siempre estén disponibles cuando se necesiten.</li>
+                        <li>Mayor vida útil del equipo en un entorno de uso constante y variado como el escolar.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://noticias.bidcom.com.ar/impresora-laser-vs-tinta-continua-cual-es-la-mejor-para-vos/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Noticias Bidcom</a>, <a href="https://www.brother.es/soluciones/centro-recursos-empresas/centro-conocimiento/impresora-laser-vs-tinta-que-tipo-me-conviene-mas" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Brother (Impresora Láser vs Tinta)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-sky-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">✨</span>
+                        <h2 class="text-2xl font-bold text-sky-700">4. Calidad de Impresión (Texto) y Resistencia</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las impresoras láser producen **texto más nítido y claro**, ideal para documentos académicos y administrativos. Además, las impresiones láser son más resistentes al agua y a las manchas que las de tinta, lo que es fundamental para materiales que serán manipulados con frecuencia.
+                    </p>
+                    <h3 class="font-semibold text-sky-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Documentos con apariencia más profesional y legible para estudiantes, padres y personal.</li>
+                        <li>Mayor durabilidad de los materiales impresos (exámenes, reportes, libros de texto), importantes para archivos y uso constante.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://hiraoka.com.pe/blog/post/impresora-laser-vs-de-tinta-cual-debo-elegir" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Hiraoka</a>, <a href="https://www.leadtech.ltd/es/a-which-lasts-longer-laser-or-inkjet.html" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Lead Tech Printer (Durabilidad)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-fuchsia-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">📚</span>
+                        <h2 class="text-2xl font-bold text-fuchsia-700">5. Volumen de Impresión</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Las impresoras láser están diseñadas para manejar **altos volúmenes de impresión** de manera eficiente, con bandejas de papel de mayor capacidad y ciclos de trabajo mensuales recomendados mucho más altos, lo que las hace ideales para las demandas de una escuela.
+                    </p>
+                    <h3 class="font-semibold text-fuchsia-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>Capacidad para satisfacer las demandas de impresión de una institución educativa (materiales de estudio, exámenes, comunicados masivos, etc.) sin sobrecargar el equipo.</li>
+                        <li>Menos necesidad de recargar papel y menos desgaste del equipo, garantizando un flujo de trabajo constante.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://latinamerica.brother.com/products/hll6400dwt" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Brother (HL-L6400DWT)</a>, <a href="https://www.compuremates.mx/producto/multifuncional-hp-laserjet-enterprise-flow-m830z-alto-volumen/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Compuremates (HP LaserJet)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-violet-500 hover:shadow-2xl transition-shadow duration-300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">🏫</span>
+                        <h2 class="text-2xl font-bold text-violet-700">6. Por qué es Ideal para Escuelas</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Considerando las necesidades específicas de una institución educativa (gran volumen de impresión de texto, necesidad de eficiencia, durabilidad y optimización de costos), las impresoras láser se alinean perfectamente con estos requisitos.
+                    </p>
+                    <h3 class="font-semibold text-violet-600 mb-2">Impacto para el Ámbito Educativo:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>**Optimización de Recursos:** Ahorro significativo en consumibles y mantenimiento a largo plazo.</li>
+                        <li>**Productividad Continua:** Impresión rápida y fiable que minimiza interrupciones en el día a día escolar.</li>
+                        <li>**Documentos de Calidad Profesional:** Asegura que los materiales educativos sean claros y duraderos.</li>
+                        <li>**Gestión Eficiente:** Capacidad para manejar la alta demanda de impresión de toda la comunidad escolar.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://hiraoka.com.pe/blog/post/impresora-laser-vs-de-tinta-cual-debo-elegir" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Hiraoka</a>, <a href="https://www.hp.com/mx-es/shop/tech-takes/mejores-impresoras-para-estudiantes-en-casa" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">HP (Impresoras para Estudiantes)</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-8 mt-12 border-t-4 border-teal-600">
+                <h2 class="text-3xl font-bold text-teal-800 mb-6 text-center">📊 Justificación de la Inversión en Impresoras Láser</h2>
+                <p class="text-gray-700 mb-4">
+                    Para el ámbito educativo, la inversión en impresoras láser se justifica por los siguientes beneficios clave:
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>
+                        <span class="font-semibold text-teal-700">Reducción de Costos Operativos:</span> El menor costo por página y la mayor durabilidad de los consumibles (tóner) resultan en ahorros significativos a largo plazo, liberando recursos para otras áreas educativas.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-teal-700">Mayor Eficiencia y Productividad:</span> La alta velocidad de impresión y la capacidad para manejar grandes volúmenes mejoran la eficiencia del personal y la disponibilidad de materiales, optimizando el tiempo de aprendizaje.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-teal-700">Menor Mantenimiento y Mayor Fiabilidad:</span> La tecnología láser es más robusta y requiere menos intervenciones, asegurando un funcionamiento continuo y reduciendo la carga del personal de TI.
+                    </li>
+                    <li>
+                        <span class="font-semibold text-teal-700">Calidad y Durabilidad de Documentos:</span> Impresiones de texto nítidas y resistentes son esenciales para el material educativo y administrativo, garantizando la legibilidad y conservación a largo plazo.
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="max-w-4xl mx-auto text-center mt-12 p-6 bg-teal-700 text-white rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">✨ Conclusión y Recomendación</h2>
+                <p class="text-lg mb-4">
+                    Considerando el alto volumen de impresión de documentos de texto, la necesidad de eficiencia, la durabilidad y la optimización de costos a largo plazo, las impresoras láser son la elección superior y más estratégica para las instituciones educativas.
+                </p>
+                <p class="text-lg">
+                    Esta decisión estratégica asegurará una infraestructura de impresión robusta, eficiente y económica, que apoyará de manera óptima las necesidades diarias de estudiantes, profesores y personal administrativo.
+                </p>
+            </footer>
+        </div>
+
+        <div id="projector-report" class="tab-content">
+            <header class="text-center mb-12">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-purple-800 leading-tight mb-4 rounded-lg bg-white p-4 shadow-lg">
+                    📽️ Informe de Justificación: Consideraciones para la Adquisición de Proyectores
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto">
+                    Este informe aborda aspectos clave a considerar en la adquisición de proyectores, enfocándose en la eficiencia energética y la justificación de las políticas de garantía de sus componentes.
+                </p>
+            </header>
+
+            <section class="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-purple-500 hover:shadow-2xl transition-shadow duration-300 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">♻️</span>
+                        <h2 class="text-2xl font-bold text-purple-700">1. Certificaciones de Eficiencia Energética (Energy Star y EPEAT)</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Es importante señalar que, actualmente, los proyectores **no están cubiertos por las certificaciones de eficiencia energética Energy Star y EPEAT**. Esto se especifica claramente en la sección "<a href="https://www.fedcenter.gov/_kd/go.cfm?Pge_ID=4139&destination=Page&printable=1&utm_source=chatgpt.com#What_electronics_are_not_currently_covered_by_EPEAT,_ENERGY_STAR_and_low_standby_power_requirements?" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">What electronics are not currently covered by EPEAT, ENERGY STAR and low standby power requirements?</a>" de la guía de adquisición sostenible de FedCenter.gov. Esto se debe a que la naturaleza de su funcionamiento, que requiere un alto consumo de energía para generar la luz necesaria, hace que no encajen en los criterios actuales de estas certificaciones.
+                    </p>
+                    <h3 class="font-semibold text-purple-600 mb-2">Impacto para usted:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>No encontrará proyectores con estas certificaciones específicas, lo que es una condición técnica que debe ser comprendida.</li>
+                        <li>El consumo energético de los proyectores debe considerarse como un costo operativo inherente a su función de proyección.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.fedcenter.gov/_kd/go.cfm?Pge_ID=4139&destination=Page&printable=1&utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">FedCenter.gov (Guía de Adquisición Sostenible)</a>
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-xl p-6 border-b-4 border-indigo-500 hover:shadow-2xl transition-shadow duration-300 md:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <span class="text-4xl mr-3">💡</span>
+                        <h2 class="text-2xl font-bold text-indigo-700">2. Justificación de la Garantía (Equipo vs. Lámpara)</h2>
+                    </div>
+                    <p class="text-gray-700 mb-3">
+                        Es una política estándar de la industria que los proyectores tengan una garantía de <strong>3 años para el equipo principal</strong>, pero solo <strong>1 año (o a veces menos, o un número limitado de horas) para la lámpara</strong>. Esta diferencia se debe a que la lámpara es un componente consumible.
+                    </p>
+                    <h3 class="font-semibold text-indigo-600 mb-2">Razones de la Diferencia:</h3>
+                    <ul class="list-disc list-inside text-gray-600 mb-4">
+                        <li>**Lámpara como Consumible:** Las lámparas de proyector (especialmente las tradicionales) tienen una vida útil limitada, medida en horas de uso. Se degradan y eventualmente se agotan con el uso normal, similar a las baterías o los cartuchos de tinta en otras tecnologías.</li>
+                        <li>**Desgaste Natural:** La garantía de la lámpara cubre defectos de fabricación iniciales, que suelen manifestarse en las primeras horas de uso, pero no cubre el desgaste natural por el funcionamiento continuo.</li>
+                        <li>**Durabilidad del Equipo:** El resto del proyector (componentes electrónicos, sistema óptico, carcasa) es mucho más duradero y no está sujeto al mismo desgaste por horas de funcionamiento, por lo que su garantía es más extensa.</li>
+                    </ul>
+                    <p class="text-sm text-gray-500">
+                        <strong>Fuente:</strong> <a href="https://www.megacom.com.mx/preguntas2.htm" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Megacom (Preguntas sobre Proyectores)</a>, <a href="https://www.proyectores-lamparas.es/garantia-lamparas/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Proyectores-Lamparas.es (Garantía Lámparas)</a>
+                    </p>
+                </div>
+            </section>
+
+            <section class="max-w-4xl mx-auto bg-white rounded-xl shadow-xl p-8 mt-12 border-t-4 border-purple-600">
+                <h2 class="text-3xl font-bold text-purple-800 mb-6 text-center">📊 Justificación de la Adquisición de Proyectores</h2>
+                <p class="text-gray-700 mb-4">
+                    La adquisición de proyectores es una inversión necesaria para las necesidades de proyección visual. Es importante que los requisitos para su compra se ajusten a la realidad del mercado.
+                </p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>
+                        <span class="font-semibold text-purple-700">Adaptación a las Condiciones del Mercado:</span> Dado que los proyectores no cumplen con las certificaciones Energy Star o EPEAT y la garantía de la lámpara es de 1 año (mientras el equipo tiene 3 años), es crucial que la adquisición se base en estas condiciones. Aceptar estas especificaciones estándar de la industria permitirá avanzar con la compra de manera eficiente, garantizando que se adquieran equipos adecuados para el propósito sin generar requisitos inalcanzables.
+                    </li>
+                </ul>
+            </section>
+
+            <footer class="max-w-4xl mx-auto text-center mt-12 p-6 bg-purple-700 text-white rounded-xl shadow-lg">
+                <h2 class="text-3xl font-bold mb-4">✨ Conclusión y Recomendación</h2>
+                <p class="text-lg mb-4">
+                    Para que la adquisición de estos equipos de proyección se lleve a cabo correctamente, es fundamental que se consideren las realidades del mercado.
+                </p>
+                <p class="text-lg">
+                    Recomendamos **eliminar el requisito de certificaciones Energy Star y EPEAT para proyectores**, y **aceptar la política de garantía estándar de 3 años para el equipo y 1 año para la lámpara**. Esto permitirá una compra efectiva, acorde con lo que ofrece la industria y sin retrasos innecesarios.
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Función para mostrar la pestaña seleccionada
+        function showTab(tabId) {
+            // Obtener todos los botones de pestaña
+            const tabButtons = document.querySelectorAll('.tab-button');
+            // Obtener todo el contenido de las pestañas
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            // Remover la clase 'active' de todos los botones y contenidos
+            tabButtons.forEach(button => button.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            // Añadir la clase 'active' al botón y contenido de la pestaña seleccionada
+            document.querySelector(`button[onclick="showTab('${tabId}')"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Mostrar la pestaña de equipos de cómputo por defecto al cargar la página
+        document.addEventListener('DOMContentLoaded', () => {
+            showTab('computer-report');
+        });
+    </script>
+
+</body>
+</html>
+
